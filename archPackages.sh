@@ -42,6 +42,18 @@ cd privateGPT/
 pip install -r requirements.txt
 mv example.env .env
 mkdir models
-sudo chmod +x ingest.sh 
-sudo chmod +x privateGPT.sh 
-cd 
+chmod +x ingest.sh 
+chmod +x privateGPT.sh 
+cd
+
+#server ping
+git clone https://github.com/Antonis01/serverPing.git
+cd serverPing/
+chmod +x serverPing.sh 
+mv serverPing.sh ~/home/$(whoami)/serverPing.sh
+cd
+rm -rf serverPing/
+
+#lazygit
+sudo pacman -S lazygit
+
