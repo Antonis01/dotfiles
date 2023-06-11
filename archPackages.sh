@@ -21,7 +21,7 @@ sudo pacman -Sy gnome-tweaks
 sudo pacman -Sy btop
 
 
-#aps
+#apps
 sudo pacman -Sy discord
 sudo pacman -Sy steam
 sudo pacman -Sy lutris
