@@ -35,6 +35,7 @@ sudo pacman -Sy code
 yay -Sy https://aur.archlinux.org/visual-studio-code-bin.git
 sudo pacman -Sy nvim
 sudo pacman -Sy mysql 
+sudo pacman -S lazygit
 
 #privategpt
 git clone https://github.com/imartinez/privateGPT.git
@@ -53,7 +54,4 @@ chmod +x serverPing.sh
 mv serverPing.sh ~/home/$(whoami)/serverPing.sh
 cd
 rm -rf serverPing/
-
-#lazygit
-sudo pacman -S lazygit
 
