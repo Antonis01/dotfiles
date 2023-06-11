@@ -1,11 +1,11 @@
 #!/bin/bash
 
 sudo pacman -Syyu
-sudo pacman -Sy gcc make cmake git
+sudo pacman -Sy gcc make git
 sudo pacman -Sy python3 python-pip 
+sudo pacman -Sy flex bison
 
-#aur-yay
-sudo pacman -Sy --needed git base-devel 
+#aur-yay 
 git clone https://aur.archlinux.org/yay.git
 cd yay/
 makepkg -si
@@ -21,21 +21,19 @@ sudo pacman -Sy gnome-tweaks
 sudo pacman -Sy btop
 
 
-#aps
+#apps
 sudo pacman -Sy discord
 sudo pacman -Sy steam
 sudo pacman -Sy lutris
 sudo pacman -Sy vlc
 sudo pacman -Sy deluge
 sudo pacman -Sy filezilla
-sudo pacman -Sy spotify 
 
 #programming
 sudo pacman -Sy code
 yay -Sy https://aur.archlinux.org/visual-studio-code-bin.git
 sudo pacman -Sy nvim
 sudo pacman -Sy mysql 
-sudo pacman -S lazygit
 
 #privategpt
 git clone https://github.com/imartinez/privateGPT.git
@@ -51,7 +49,6 @@ cd
 git clone https://github.com/Antonis01/serverPing.git
 cd serverPing/
 chmod +x serverPing.sh 
-mv serverPing.sh ~/home/$(whoami)/serverPing.sh
+mv serverPing.sh ~/serverPing.sh
 cd
 rm -rf serverPing/
-
