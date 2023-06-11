@@ -1,7 +1,8 @@
 #!/bin/bash
 
+cd 
 sudo pacman -Syyu
-sudo pacman -Sy gcc make git
+sudo pacman -Sy gcc make git cmake
 sudo pacman -Sy python3 python-pip 
 sudo pacman -Sy flex bison
 
@@ -30,8 +31,7 @@ sudo pacman -Sy deluge
 sudo pacman -Sy filezilla
 
 #programming
-sudo pacman -Sy code
-yay -Sy https://aur.archlinux.org/visual-studio-code-bin.git
+yay -Sy visual-studio-code-bin 
 sudo pacman -Sy nvim
 sudo pacman -Sy mysql 
 
