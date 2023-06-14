@@ -29,6 +29,7 @@ sudo pacman -Sy lutris
 sudo pacman -Sy vlc
 sudo pacman -Sy deluge
 sudo pacman -Sy filezilla
+yay -Sy blackbox-terminal
 
 #programming
 yay -Sy visual-studio-code-bin 
