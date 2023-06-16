@@ -33,7 +33,7 @@ yay -Sy blackbox-terminal
 
 #programming
 yay -Sy visual-studio-code-bin 
-sudo pacman -Sy nvim
+sudo pacman -Sy neovim
 sudo pacman -Sy mysql 
 
 #privategpt
