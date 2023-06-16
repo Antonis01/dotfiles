@@ -25,7 +25,12 @@ sudo apt install -y deluge
 sudo apt install -y filezilla
 
 # Programming
-# add vs-code
+sudo apt update
+sudo apt install gnupg2 software-properties-common apt-transport-https curl
+curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
 sudo apt install -y neovim
 sudo apt install -y mysql-server
 
@@ -40,6 +45,7 @@ chmod +x privateGPT.sh
 cd
 
 # Server ping
+sudo apt install netcat
 git clone https://github.com/Antonis01/serverPing.git
 cd serverPing/
 chmod +x serverPing.sh

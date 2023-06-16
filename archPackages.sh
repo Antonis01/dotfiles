@@ -47,6 +47,7 @@ chmod +x privateGPT.sh
 cd
 
 #server ping
+sudo pacman -Sy netcat
 git clone https://github.com/Antonis01/serverPing.git
 cd serverPing/
 chmod +x serverPing.sh 
