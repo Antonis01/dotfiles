@@ -21,16 +21,14 @@ sudo apt install -y discord
 sudo apt install -y steam
 sudo apt install -y lutris
 sudo apt install -y vlc
-sudo apt install -y deluge
 sudo apt install -y filezilla
 
 # Programming
+wget https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg 
+sudo mv pub.gpg /usr/share/keyrings/vscodium-archive-keyring.asc
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.asc ] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs vscodium main' | sudo tee /etc/apt/sources.list.d/vscodium.list
 sudo apt update
-sudo apt install gnupg2 software-properties-common apt-transport-https curl
-curl -sSL https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-sudo apt update
-sudo apt install code
+sudo apt install codium codium-insiders
 sudo apt install -y neovim
 sudo apt install -y mysql-server
 

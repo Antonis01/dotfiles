@@ -32,7 +32,7 @@ sudo pacman -Sy filezilla
 yay -Sy blackbox-terminal
 
 #programming
-yay -Sy visual-studio-code-bin 
+yay -Sy vscodium
 sudo pacman -Sy nvim
 sudo pacman -Sy mysql 
 
