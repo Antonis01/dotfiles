@@ -30,6 +30,11 @@ sudo pacman -Sy vlc
 sudo pacman -Sy deluge
 sudo pacman -Sy filezilla
 yay -Sy blackbox-terminal
+sudo pacman -Sy gimp
+sudo pacman -Sy blender
+sudo pacman -Sy audacity
+sudo pacman -Sy kdenlive
+sudo pacman -Sy obs-studio
 
 #programming
 yay -Sy vscodium

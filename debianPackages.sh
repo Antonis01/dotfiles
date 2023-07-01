@@ -22,6 +22,11 @@ sudo apt install -y steam
 sudo apt install -y lutris
 sudo apt install -y vlc
 sudo apt install -y filezilla
+sudo apt install -y gimp
+sudo apt install -y blender
+sudo apt install -y audacity
+sudo apt install -y kdenlive
+sudo apt install -y obs-studio
 
 # Programming
 wget https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg 
