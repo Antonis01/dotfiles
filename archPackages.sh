@@ -1,44 +1,40 @@
 #!/bin/bash
 
 cd 
-sudo pacman -Syyu
-sudo pacman -Sy gcc make git cmake
-sudo pacman -Sy python3 python-pip 
-sudo pacman -Sy flex bison
+sudo pacman -Syyu --noconfirm
+sudo pacman -Sy --noconfirm gcc make git cmake
+sudo pacman -Sy --noconfirm python3 python-pip 
+sudo pacman -Sy --noconfirm flex bison
 
 #aur-yay 
 git clone https://aur.archlinux.org/yay.git
 cd yay/
-makepkg -si
+makepkg -si 
 cd 
 
 #browsers
-sudo pacman -Sy firefox
+sudo pacman -Sy --noconfirm firefox
 
 #utilities
-sudo pacman -Sy nemo
-sudo pacman -Sy neofetch
-sudo pacman -Sy gnome-tweaks
-sudo pacman -Sy btop
+sudo pacman -Sy --noconfirm nemo
+sudo pacman -Sy --noconfirm neofetch
+sudo pacman -Sy --noconfirm btop
 
 
 #apps
-sudo pacman -Sy discord
-sudo pacman -Sy steam
-sudo pacman -Sy lutris
-sudo pacman -Sy vlc
-sudo pacman -Sy deluge
-sudo pacman -Sy filezilla
+sudo pacman -Sy --noconfirm discord
+sudo pacman -Sy --noconfirm vlc
+sudo pacman -Sy --noconfirm filezilla
 yay -Sy blackbox-terminal
-sudo pacman -Sy gimp
-sudo pacman -Sy blender
-sudo pacman -Sy audacity
-sudo pacman -Sy kdenlive
-sudo pacman -Sy obs-studio
+sudo pacman -Sy --noconfirm gimp
+sudo pacman -Sy --noconfirm blender
+sudo pacman -Sy --noconfirm audacity
+sudo pacman -Sy --noconfirm kdenlive
+sudo pacman -Sy --noconfirm obs-studio
 
 #programming
 yay -Sy vscodium
-sudo pacman -Sy neovim
+sudo pacman -Sy --noconfirm neovim
 sudo pacman -Sy mysql 
 
 #privategpt
@@ -52,7 +48,7 @@ chmod +x privateGPT.sh
 cd
 
 #server ping
-sudo pacman -Sy netcat
+sudo pacman -Sy --noconfirm netcat
 git clone https://github.com/Antonis01/serverPing.git
 cd serverPing/
 chmod +x serverPing.sh 
