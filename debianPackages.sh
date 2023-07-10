@@ -8,7 +8,7 @@ sudo apt install -y python3 python3-pip
 sudo apt install -y flex bison
 
 # Browsers
-sudo apt install -y firefox
+sudo apt install -y firefox-esr
 
 # Utilities
 sudo apt install -y nemo
@@ -35,7 +35,15 @@ echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.asc ] https:/
 sudo apt update
 sudo apt install codium codium-insiders
 sudo apt install -y neovim
-sudo apt install -y mysql-server
+sudo apt install curl software-properties-common dirmngr -y
+curl -LsS -O https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
+sudo bash mariadb_repo_setup --mariadb-server-version=10.6
+sudo apt update
+sudo apt install mariadb-server mariadb-client -y
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+sudo mariadb-secure-installation
+
 
 # PrivateGPT
 git clone https://github.com/imartinez/privateGPT.git
