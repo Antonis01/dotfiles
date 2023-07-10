@@ -17,9 +17,6 @@ sudo apt install -y gnome-tweaks
 sudo apt install -y btop
 
 # Apps
-sudo apt install -y discord
-sudo apt install -y steam
-sudo apt install -y lutris
 sudo apt install -y vlc
 sudo apt install -y filezilla
 sudo apt install -y gimp
@@ -56,7 +53,7 @@ chmod +x privateGPT.sh
 cd
 
 # Server ping
-sudo apt install netcat
+sudo apt install -y netcat-traditional
 git clone https://github.com/Antonis01/serverPing.git
 cd serverPing/
 chmod +x serverPing.sh
