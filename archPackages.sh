@@ -31,6 +31,7 @@ sudo pacman -Sy --noconfirm blender
 sudo pacman -Sy --noconfirm audacity
 sudo pacman -Sy --noconfirm kdenlive
 sudo pacman -Sy --noconfirm obs-studio
+yay -Sy onlyoffice-bin
 
 #programming
 yay -Sy vscodium
