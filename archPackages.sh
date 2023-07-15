@@ -34,7 +34,7 @@ sudo pacman -Sy --noconfirm obs-studio
 yay -Sy onlyoffice-bin
 
 #programming
-yay -Sy vscodium
+yay -Sy visual-studio-code-bin 
 sudo pacman -Sy --noconfirm neovim
 sudo pacman -Sy mysql 
 
