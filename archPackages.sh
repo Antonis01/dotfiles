@@ -19,7 +19,7 @@ sudo pacman -Sy --noconfirm firefox
 sudo pacman -Sy --noconfirm nemo
 sudo pacman -Sy --noconfirm neofetch
 sudo pacman -Sy --noconfirm btop
-
+sudo pacman -Sy --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
 
 #apps
 sudo pacman -Sy --noconfirm discord
