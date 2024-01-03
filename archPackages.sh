@@ -31,12 +31,13 @@ sudo pacman -Sy --noconfirm blender
 sudo pacman -Sy --noconfirm audacity
 sudo pacman -Sy --noconfirm kdenlive
 sudo pacman -Sy --noconfirm obs-studio
-yay -Sy onlyoffice-bin
+yay -Sy --noconfirm  onlyoffice-bin
+yay -Sy --noconfirm linux-wifi-hotspot
 
 #programming
-yay -Sy visual-studio-code-bin 
+yay -Sy --noconfirm visual-studio-code-bin 
 sudo pacman -Sy --noconfirm neovim
-sudo pacman -Sy mysql 
+sudo pacman -Sy --noconfirm mysql 
 
 #privategpt
 git clone https://github.com/imartinez/privateGPT.git
