@@ -1,0 +1,24 @@
+# A file that contains everything that is displayed in the terminal
+
+#terminal display
+#figlet "Zorin OS"
+#printf "\n"
+#neofetch
+#printf "ctrl+shift+e: split vertically.\nctrl+shift+o: split horizontally.\n\n"
+
+#if [ $PWD == "/home/antonis" ]; then 
+
+	#clear	
+	#echo "=============================================================================================="
+	#neofetch
+        #echo "=============================================================================================="
+        #./.serverPing.sh
+	#echo "=============================================================================================="
+        #printf "\n\n"
+	#echo "~ ctrl+shift+e: split vertically ~"
+	#echo "~ ctrl+shift+o: split horizontally ~"
+	#echo "~ ctrl+shift+w: close terminal tab ~"
+	#echo "~ lazygit: commit on github ~"
+	#printf "\n" 
+
+#fi
