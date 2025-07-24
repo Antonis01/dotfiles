@@ -116,5 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export MANPAGER='nvim +Man!'
+
 PS1="\e[40;1;32m[\w] \n$\e[40;0;36m "
 #PS1='\e[40;0;32m-[\u - \w]\n-\n--> \e[40;0;36m\n'
